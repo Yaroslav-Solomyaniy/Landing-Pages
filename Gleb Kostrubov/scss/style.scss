@@ -40,17 +40,26 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-.header__inner {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
+
 .header__menu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px;
+}
+.fixed {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  z-index: 100;
+}
+.header__menu_inner {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 40px 0 0 0;
+  justify-content: space-around;
 }
 .logotype {
   display: flex;
@@ -71,6 +80,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin: auto 0;
 }
 .nav_link {
   font-size: $fontsize;
@@ -87,16 +97,19 @@ body {
   :active {
     text-decoration: none;
   }
-  &:last-child
-  {
+  &:last-child {
     margin-right: 20px;
   }
+}
+.fixed_header_nav_color {
+  opacity: 1;
+  color: $colorWhite;
 }
 
 .header__content {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 200px;
+  padding-top: 300px;
 }
 .content__info {
   width: 40%;
@@ -506,8 +519,7 @@ body {
   text-decoration: none;
   font-family: $TextAradora;
   margin-top: 10px;
-  &:first-child
-  {
+  &:first-child {
     margin-top: 0;
   }
 }
@@ -529,8 +541,7 @@ body {
     font-weight: 400;
     text-decoration: none;
     margin-top: 10px;
-    &:hover
-    {
+    &:hover {
       text-decoration: underline;
       color: $colorWhite;
     }
@@ -561,8 +572,7 @@ body {
     color: white;
   }
 }
-.copyright
-{
+.copyright {
   margin-top: 60px;
   color: $TextHeaderColor;
   font-size: 18px;

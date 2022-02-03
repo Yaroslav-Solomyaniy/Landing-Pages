@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
     <link rel="manifest" href="img/site.webmanifest" />
     <link
       rel="stylesheet"
@@ -19,21 +33,24 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__menu">
-            <div class="logotype">
-              <img src="img/Group.png" alt="Logo" />
-              <span class="Natinatic">Notitanic</span>
-            </div>
-            <div class="header__nav">
-              <a class="nav_link" href="#">Home</a>
-              <a class="nav_link" href="#">About Me</a>
-              <a class="nav_link" href="#">Portfolio</a>
-              <a class="nav_link" href="#">Contact</a>
+    <header class="header" id="header">
+      <div class="header__inner">
+        <div class="container">
+          <div class="header__menu" id="header__menu">
+            <div class="header__menu_inner">
+              <div class="logotype">
+                <img src="img/Group.png" alt="Logo" />
+                <span class="Natinatic">Notitanic</span>
+              </div>
+              <div class="header__nav">
+                <a class="nav_link" href="#" data-scroll="#header">Home</a>
+                <a class="nav_link" href="#" data-scroll="#main">About Me</a>
+                <a class="nav_link" href="#" data-scroll="#portfolio">Portfolio</a>
+                <a class="nav_link" href="#" data-scroll="#footer">Contact</a>
+              </div>
             </div>
           </div>
+
           <div class="header__content">
             <div class="content__info">
               <div class="content__subtitle">Hello</div>
@@ -74,7 +91,7 @@
     </header>
     <!-- !Header -->
     <!-- MAIN -->
-    <main class="main">
+    <main class="main" id="main">
       <div class="container">
         <section class="skills">
           <div class="skills__inner">
@@ -215,7 +232,7 @@
     </main>
     <!-- !MAIN -->
     <!-- Portfolio -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio__inner">
           <div class="content__subtitle portf__title">Portfolio</div>
@@ -342,14 +359,14 @@
     </section>
     <!-- Portfolio -->
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="page__links">
-            <a href="#" class="footer__link">Home</a>
-            <a href="#" class="footer__link">About me</a>
-            <a href="#" class="footer__link">Portfolio</a>
-            <a href="#" class="footer__link">Contact</a>
+            <a href="#" class="footer__link" data-scroll="#header">Home</a>
+            <a href="#" class="footer__link" data-scroll="#main">About me</a>
+            <a href="#" class="footer__link" data-scroll="#portfolio">Portfolio</a>
+            <a href="#" class="footer__link" data-scroll="#footer">Contact</a>
           </div>
 
           <div class="page__contact">
@@ -369,7 +386,7 @@
                 <img src="img/Group.png" alt="Logo" />
                 <span class="Natinatic">Notitanic</span>
               </div>
-              <a href="#" class="Scroll-up"></a>
+              <a href="#" class="Scroll-up" data-scroll="#header"></a>
             </div>
             <div class="copyright">Copyright © 2021, Notitanic</div>
           </div>
@@ -383,6 +400,7 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/slaider.js"></script>
+    <script src="./js/main.js"></script>
     <!-- !Script -->
   </body>
 </html>
